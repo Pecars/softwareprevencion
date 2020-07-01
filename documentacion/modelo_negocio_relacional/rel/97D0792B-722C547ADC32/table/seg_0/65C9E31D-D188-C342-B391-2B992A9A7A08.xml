@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65C9E31D-D188-C342-B391-2B992A9A7A08" name="asesoria">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6CACC12C-24A7-90CD-13E2-6E77E78D55CB</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>ase</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ase" id="D8F1C4A9-4611-D1A9-14BF-96CE0A0E5F2E">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6A978110-88F5-9CB5-FA5D-49BA574E8110</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_asesoria_agendada" id="C3267C4D-5CEC-983E-6681-534D10DDBA79">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>82B6E99F-C6F7-8AF3-16F6-CF3E18E8307F</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_asesoria_realizada" id="5A0E43F1-BD56-9683-6196-571B6B4B0063">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>919AAB00-1F7D-B833-B29E-2F29A1AF3476</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="asesoria_incluida" id="C0A52C1B-62D8-7705-E6CC-186233A7F757">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6FA7746A-7DC9-26BF-2729-06D87D683D8A</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_asesoria" id="054CD119-4176-DF6E-9F9D-E7ADE51FF224">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>2B434691-4BFE-7A1B-02C6-391A6745B282</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tema_asesoria" id="A0C14536-F6CA-8984-8EB8-022FFDAF3E60">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>1033F490-26DB-7344-5356-C1091C66FCF3</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones_asesoria" id="E9047C8F-02A3-54FF-2C67-65CD7E616BFB">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>7BF0EFD4-C091-FDC8-2354-BA3BEDDF3767</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000 CHAR</dataTypeSize>
+<ownDataTypeParameters>3000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empresa_rut_empresa" id="C9B55A48-705A-F255-BF9F-81FC3F579283">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6D43F0B5-BA61-7C9D-D7BF-FEAC80B39ADC</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5416B5B-FB28-7E1A-172C-F40C31CB7B50" referredColumn="4E673ACF-E046-9857-297A-9532F299781D"/>
+</associations>
+</Column>
+<Column name="profesionales_rut_prof" id="E976D807-AE27-D0FC-3CC2-3AF58E0F7BD3">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>45A35516-B83C-1BFD-1AC9-6948C71AA8AB</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="474AF4CB-B1E3-B092-618E-72DBB31BE063" referredColumn="8ADCACA6-4C13-CC7E-009B-0D3F8DB2E417"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2E4136F-D1AD-AA11-D543-5371A6243E10" name="asesoria_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>EC772567-4121-06BE-2769-BADB0479B9C4</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8F1C4A9-4611-D1A9-14BF-96CE0A0E5F2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83C6751E-34CE-E384-8641-2F1F9DD6B94E" name="asesoria_profesionales_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>DB1FF734-5A48-E7F3-F6FD-C18A2F382DF2</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E976D807-AE27-D0FC-3CC2-3AF58E0F7BD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56040279-C19B-6027-A919-C2BDDAE85D60" name="asesoria_empresa_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>9B609A89-172B-75D7-68D7-0602D628759A</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9B55A48-705A-F255-BF9F-81FC3F579283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="793AA024-8105-1845-901A-AE6BA4101469" name="capacitacion">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>76C03D00-AA57-AD45-482C-6F4C5EEBE13E</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>cap</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cap" id="011F9D31-6978-7EA8-A271-984FD35281EB">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6D336FC1-FB1D-FD33-C1E0-C561125B309B</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_capacitacion" id="7A841843-0616-26D9-608E-F305A9364A19">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>4BCDFFD5-3D6A-A74B-5522-5791532FF2A6</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion_capacitacion" id="EB391FC5-F15B-4B9C-5675-A5E9C66732D3">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>1E6B7C66-25C2-7C10-2D36-7E4D3A395D84</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vigencia_capacitacion" id="35F15F37-7017-99B4-843A-11CC5D710108">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>5CA22F25-09A5-661E-BD72-6F2D336787EB</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="818CF16A-56E6-EFF0-8626-A7946E6AFC6C" name="capacitacion_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>4710109A-9BB9-B456-6E73-874E08228EED</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="011F9D31-6978-7EA8-A271-984FD35281EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

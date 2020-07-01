@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FD081FE-B2BD-277D-3B3B-1104AD5B817B" name="representante">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>CFA63CF0-7769-B544-5710-17C3C8053C31</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>rep</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rep" id="38AAB810-85E3-CC3B-67E4-7C1C95022A28">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F785C835-84B7-5A89-7D7C-27C5FD758C23</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_representante" id="913A1772-BAFB-3EA8-72A1-A02B7B0B7530">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>3C27C07D-BD2B-C0E9-0A81-868B7CB1DF0F</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave_representante" id="89FB3CFF-D0B3-E988-C488-422F625FE3F1">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>7F7C5CC8-8FFD-E19A-B624-08DC143DB0B8</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_representante" id="FAA33906-8DA0-3C48-8FA6-EA018C9AA16C">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>BB1D3939-BA43-6A73-FD86-82C28D1DC209</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_representante" id="CE178858-9577-D0F6-F8A8-4EFFC77A4F29">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>1539FE5A-C80A-5663-ECDA-A5AB20ADB654</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_representante" id="A14D6EBA-E276-93BD-7513-337BCA2B78A6">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>50FC4395-378E-F0B0-ECFD-728581268AD5</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_representante" id="156F90F2-F42F-7B03-4436-72E6D5B6D21C">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>D3C66D7A-5582-9F6B-D5E8-6FCE67F7D8CB</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empresa_rut_empresa" id="8C770011-6C1D-4D21-BE15-4EA61930771C">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>55F054A8-A27B-C0D4-6FB6-9417FD91B32A</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1D411ED-6FED-B683-E205-34C1F2AE252A" referredColumn="4E673ACF-E046-9857-297A-9532F299781D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="022BC6C4-3D9B-5422-1BEF-EE8548F8F959" name="representante_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>25382D06-A493-71DB-BEB2-DAA016335159</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="156F90F2-F42F-7B03-4436-72E6D5B6D21C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F168E526-AB6A-E5FD-5904-F0B3C04045AE" name="representante_empresa_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>5853AFBE-FF5E-31E4-D10F-921E4EC3C406</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C770011-6C1D-4D21-BE15-4EA61930771C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

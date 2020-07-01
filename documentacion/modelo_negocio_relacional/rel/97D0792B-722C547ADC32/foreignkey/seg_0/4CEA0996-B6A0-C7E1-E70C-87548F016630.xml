@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4CEA0996-B6A0-C7E1-E70C-87548F016630" containerWithKeyObject="4730CB28-873A-EC08-AA31-7307FDBB78C2" localFKIndex="974A6CDA-0F02-14DB-98C5-1102212C6E41" name="revision_mejora_act_mej_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>489DAFE5-F9DF-4D80-F91A-2366DA05E7B4</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<referredTableLongName>actividad_mejora</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BDF324B1-D8AC-DB4E-36D1-1E182DF80157</referredTableID>
+<keyObject>CCE80167-CC92-C742-3396-CBDC5CD018AD</keyObject>
+<referredKeyID>CCE80167-CC92-C742-3396-CBDC5CD018AD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_act_mej</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

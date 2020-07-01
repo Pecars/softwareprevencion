@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_negocio_relacional" id="3400F57B-933D-220A-A991-1212D33F2FC4" version="3.5">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 21:45:10 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3400F57B-933D-220A-A991-1212D33F2FC4</designId>
+</OSDM_Design>

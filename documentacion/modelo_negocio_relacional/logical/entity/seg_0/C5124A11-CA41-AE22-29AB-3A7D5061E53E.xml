@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5124A11-CA41-AE22-29AB-3A7D5061E53E" name="visita">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:35:34 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>vis</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vis" id="98CB5167-59D2-6F63-4FE3-DF000D5CB35C">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:36:13 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="motivo_visita" id="73F53B1C-F820-6A00-9CE9-F43D5AAE6D60">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:41:27 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacion_visita" id="129293CD-4C4D-6E17-960C-7E5AE67B80CE">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:43:22 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000 CHAR</dataTypeSize>
+<ownDataTypeParameters>3000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_empresa" id="BD0D02FD-9F3F-F939-E6AB-3FE3485A03F8">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:08:49 UTC</createdTime>
+<generatorID>9E3DB433-A819-1DC0-15E7-332FEB6EF4C9</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<referedAttribute>499E1404-95E5-321B-9229-777F5B0783DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_profesional" id="60BB0CC9-390D-0B59-5B7E-C626025A899B">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:09:47 UTC</createdTime>
+<generatorID>92214D69-8B21-AC3D-1901-0E0B64ACA807</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<referedAttribute>1A1A1E3D-F71F-4B06-444E-0971F6B963F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="827D282A-8109-E81F-820B-C885F620DE4F" name="visita PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:44:08 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98CB5167-59D2-6F63-4FE3-DF000D5CB35C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

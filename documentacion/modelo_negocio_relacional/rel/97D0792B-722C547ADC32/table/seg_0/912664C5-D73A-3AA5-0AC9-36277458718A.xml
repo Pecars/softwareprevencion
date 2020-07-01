@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="912664C5-D73A-3AA5-0AC9-36277458718A" name="administrador">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F0EBB2AD-A2E2-A0FC-C6A3-B43D7EC5D999</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>adm</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_adm" id="CCF63D8A-FC10-5CF6-B498-A84363BA54B0">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>390473B4-A909-E264-EB1E-F00C84132CAD</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_administrador" id="19002E00-4583-B3A0-2B99-8C072C7C9855">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>A29E146D-E364-3CE4-7EA2-5F5F2549BFBC</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave_administrador" id="793CA73A-C828-C726-4EAC-019E8BF1CA14">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>8AF26336-205C-2A1A-066C-42179B14493E</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_administrador" id="2D3F2090-EE90-F720-13C0-F09E1807C651">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>10C3D836-E7AC-1F1F-EF24-4FFB43DF466B</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_administrador" id="1D658663-B73B-8B29-BAE4-C2F465CFAE3D">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>5012181A-F688-56B1-84C1-B2A15BBE8573</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_administrador" id="6D1E5B13-0C20-FAFC-8C91-F05932D39617">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F8AF122B-8626-7D08-3CBC-F196EBC8A553</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_administrador" id="963C3547-E9D3-A6D1-ACBF-8A1D3876AA21">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>4CB09572-45AD-1677-B32B-1D87D2D82C88</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DB294AD-25B9-85FE-E5BA-DA1C2FCCDF5C" name="administrador_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>FAF6A1BB-1A1A-178F-8941-AF0824B25B08</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="963C3547-E9D3-A6D1-ACBF-8A1D3876AA21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

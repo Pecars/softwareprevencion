@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5D89F1C0-3AC5-7C39-DCD2-F5C4EBC1B2DE" containerWithKeyObject="6CF8754D-67F8-E327-3932-3F683E9867DC" localFKIndex="87A5CEF6-B92C-FD60-158B-DA6BD7662FFC" name="reporte_cliente_empresa_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>AD4128F3-B6AA-19AB-53E2-33DB0F47CB06</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<referredTableLongName>empresa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1A28B812-0C6A-9AF7-1BAE-A64F87B5EEE2</referredTableID>
+<keyObject>415994D4-08E5-EDD0-EDD7-A99ED258EA97</keyObject>
+<referredKeyID>415994D4-08E5-EDD0-EDD7-A99ED258EA97</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83DE769E-9BC7-A856-8E75-D2486A82BDAE" name="actividad_mejora">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:55:55 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>act_mej</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_act_mej" id="3FCAA790-7B04-3D94-494C-BA4EA11B501F">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 22:56:06 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="problema_detectado" id="B82B2A6C-40F0-E379-67F4-9B6D0B79E714">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 23:18:48 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mejora_propuesta" id="D456291D-F24E-6114-3CA6-5FB6B66336AA">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 23:23:27 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_empresa" id="C0764536-AB5C-3658-5B5D-883C920A8A14">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:08:49 UTC</createdTime>
+<generatorID>708B5934-1546-072B-5C0D-16F8CF7187AF</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<referedAttribute>499E1404-95E5-321B-9229-777F5B0783DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_profesional" id="A6EA7991-193E-375E-BE37-163EDECFBA20">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:09:47 UTC</createdTime>
+<generatorID>6960BC8C-ACDC-56F8-3782-6665F8517482</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<referedAttribute>1A1A1E3D-F71F-4B06-444E-0971F6B963F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DEAC61C-BC8F-286F-484A-55E536F567AF" name="actividad_mejora PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-26 23:18:47 UTC</createdTime>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<engineerTo>
+<item key="97D0792B-5796-3864-5723-722C547ADC32" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3FCAA790-7B04-3D94-494C-BA4EA11B501F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

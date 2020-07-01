@@ -1,0 +1,64 @@
+
+alter table empresa rename column dirección_empresa to direccion_empresa;
+
+
+--Inserta administradores
+insert into administrador(id_adm, usuario_administrador, clave_administrador, nombre_administrador, telefono_administrador, correo_administrador, rut_administrador)
+values(1, 'paulac', '12345', 'Paula Carrasco', '65433456', 'paula@empresa.cl', 17314039);
+insert into administrador(id_adm, usuario_administrador, clave_administrador, nombre_administrador, telefono_administrador, correo_administrador, rut_administrador)
+values(2, 'marceloa', '12345', 'Marcelo Albornoz', '98766789', 'marcelo@empresa.cl', 11111111);
+insert into administrador(id_adm, usuario_administrador, clave_administrador, nombre_administrador, telefono_administrador, correo_administrador, rut_administrador)
+values(3, 'nice', '12345', 'Rodrigo Zepeda', '43211234', 'nice@empresa.cl', 22222222);
+
+--inserta empresas
+insert into empresa(id_emp, nombre_empresa, representante_empresa, rut_empresa, direccion_empresa, telefono_empresa, correo_empresa, giro_empresa, fecha_ingreso_empresa, numero_trabajadores_enero, numero_trabajadores_abril, numero_trabajadores_julio, numero_trabajadores_septiembre, tasa_accidentabilidad, administrador_rut_admin)
+values(1, 'Fruna', 'Pepito Fruna', '12121212', 'Calle angosta al lado del jardín Maipú', '25252525', 'hola@fruna.cl', 'confites de primera necesidad y jardín infantil', TO_DATE('2003/05/03', 'yyyy/mm/dd'), 100, 120, 200, 102, 5.6, 17314039);
+
+insert into empresa(id_emp, nombre_empresa, representante_empresa, rut_empresa, direccion_empresa, telefono_empresa, correo_empresa, giro_empresa, fecha_ingreso_empresa, numero_trabajadores_enero, numero_trabajadores_abril, numero_trabajadores_julio, numero_trabajadores_septiembre, tasa_accidentabilidad, administrador_rut_admin)
+values(2, 'Tupperware', 'Pepito Tupper', '24242424', 'El Parrón 878, La Cisterna', '74747474', 'pote@tupper.cl', 'Potes innecesarios', TO_DATE('2020/04/03', 'yyyy/mm/dd'), 10, 12, 60, 72, 1.4, 11111111);
+
+insert into empresa(id_emp, nombre_empresa, representante_empresa, rut_empresa, direccion_empresa, telefono_empresa, correo_empresa, giro_empresa, fecha_ingreso_empresa, numero_trabajadores_enero, numero_trabajadores_abril, numero_trabajadores_julio, numero_trabajadores_septiembre, tasa_accidentabilidad, administrador_rut_admin)
+values(1, 'Rhein', 'Pepito Rhein', '95959595', 'Vicuña Mackenna 1111', '84848484', 'escribe@rhein.cl', 'cuadernos', TO_DATE('2012/12/04', 'yyyy/mm/dd'), 132, 88, 133, 136, 3.4, 22222222);
+
+--inserta profesional
+
+insert into profesionales (id_pro, nombre_profesional, apellido_profesional, rut_profesional, departamento_profesional, telefono_profesional, correo_profesional, cargo_profesional, profesion_profesional, fecha_ingreso_profesional, usuario_profesional, clave_profesional, administrador_rut_admin)
+values (1, 'Perro', 'Doge', 17887178, 'fiscalización', 75753494, 'pdoge@empresa.cl', 'fiscalizador', 'Ingeniero en Galletitas de Premio',  TO_DATE('2012/12/14', 'yyyy/mm/dd'), 'pdoge2', '1234', 17314039);
+
+--inserta capacitacion
+insert into capacitacion (id_cap, nombre_capacitacion, fecha_creacion_capacitacion, vigencia_capacitacion)
+values (1, 'Uso de cascos',  TO_DATE('2017/03/05', 'yyyy/mm/dd'),'V');
+
+--inserta asesoria
+insert into asesoria (id_ase, fecha_asesoria_agendada, fecha_asesoria_realizada, asesoria_incluida, tipo_asesoria, tema_asesoria, observaciones_asesoria, empresa_rut_empresa, profesionales_rut_prof)
+values (1, TO_DATE('2020/03/06', 'yyyy/mm/dd'), TO_DATE('2020/03/06', 'yyyy/mm/dd'), 'S', 'Control de Accidentes', 'Control de Accidentes', 'sin observaciones', 95959595, 17887178);
+
+-- inserta actividad mejora
+insert into actividad_mejora(id_act_mej, problema_detectado, mejora_propuesta, empresa_rut_empresa, profesionales_rut_prof) 
+values(1, 'trabajadores no llevan cascos', 'Letreros que indiquen el uso de casco en faena', 95959595, 17887178);
+
+-- inserta revisión mejora
+insert into revision_mejora(id_rev_mej, cumplimiento_revision_mejora, observaciones_revision_mejora, actividad_mejora_id_act_mej, profesionales_rut_profesional)
+values(1, 'S', 'sin observaciones', 1, 17887178);
+
+-- inserta instanacia capacitación
+insert into instancia_capacitacion(id_ins, fecha_agendada, fecha_realizada, estado_capacitacion, tema_capacitacion, observaciones_capacitacion, capacitacion_id_cap, empresa_rut_empresa, profesionales_rut_prof)
+values(1, TO_DATE('2020/03/16', 'yyyy/mm/dd'), TO_DATE('2020/03/16', 'yyyy/mm/dd'), 'H', 'Uso de cascos', 'Sin observaciones', '1', 95959595, 17887178);
+
+-- inserta fila representante
+insert into representante(id_rep, usuario_representante, clave_representante, nombre_representante, telefono_representante, correo_representante, rut_representante, empresa_rut_empresa)
+values (1, 'pupi1', '1234', 'Pupi Quiltra', 73849568, 'pupi@rhein.cl', 21546789, 95959595);
+
+-- inserta fila reporte accidente
+insert into reporte_accidente(id_rep_acc, tipo_accidente, descripcion_accidente, empresa_rut_empresa, representante_rut_repres)
+values (1, 'golpe', 'golpe con objeto que cayó desde altura',95959595,21546789);
+
+-- inserta fila reporte cliente
+
+insert into reporte_cliente(id_rep_cli, inicio_periodo_reporte, fin_periodo_reporte, accidentes_periodo, tasa_accidentabilidad, capacitaciones_periodo, asesorias_periodo, visitas_periodo, actividades_mejora_periodo, empresa_rut_empresa, administrador_rut_admin)
+values(1, TO_DATE('2019/06/27', 'yyyy/mm/dd'), TO_DATE('2020/06/27', 'yyyy/mm/dd'), 1, 0.5, 1, 1, 2, 1, 24242424, 11111111);
+
+-- inserta fila visita
+
+insert into visita (id_vis, motivo_visita, observacion_visita, empresa_rut_empresa, profesionales_rut_profesional)
+values(1, 'Inspección rutinaria', 'Emanación de gas', 24242424, 17887178);

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4730CB28-873A-EC08-AA31-7307FDBB78C2" name="revision_mejora">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>4FE13A26-11D7-F5C0-AEE9-E6049E953A98</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>rev_mej</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rev_mej" id="7F1ACDBB-9CA6-4501-E10B-46F1106CC48A">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F8275126-DAA0-12CB-A094-2A25CDF11C8E</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cumplimiento_revision_mejora" id="FADFAA75-1CE6-6AB3-4ECE-7E0986CAE72C">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>D6B9C04B-4CAE-7C76-61C9-39C37835AFB6</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones_revision_mejora" id="C93AF040-F046-BF56-58AD-F4DA5A667491">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>6DBCE999-1278-5423-086A-6824DD2972B9</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000 CHAR</dataTypeSize>
+<ownDataTypeParameters>3000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actividad_mejora_id_act_mej" id="613A8062-DC6D-669F-2124-919A98482B61">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>738B1E90-0FCA-921D-C726-402D9603411F</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CEA0996-B6A0-C7E1-E70C-87548F016630" referredColumn="E1E47C71-1CD9-FC5C-8DE4-AC4736BC4437"/>
+</associations>
+</Column>
+<Column name="profesionales_rut_profesional" id="1C5A1BD0-B8E9-CCEE-3567-011A74F508D6">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>B27D5F9E-1247-040D-D5C6-FEBDC05D5DF4</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D5D0C42-F8AB-7221-96DE-2237DC11C810" referredColumn="8ADCACA6-4C13-CC7E-009B-0D3F8DB2E417"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BEE14C1-AF0D-33BB-B20B-6F111560B8E0" name="revision_mejora_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>328225F1-FA92-5B5C-B97A-D6F6D746F480</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F1ACDBB-9CA6-4501-E10B-46F1106CC48A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="974A6CDA-0F02-14DB-98C5-1102212C6E41" name="revision_mejora_act_mej_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>489DAFE5-F9DF-4D80-F91A-2366DA05E7B4</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="613A8062-DC6D-669F-2124-919A98482B61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C90CA401-7D24-885A-9FF6-9EB17A629514" name="revision_mejora_prof_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>054AE0C5-79D2-67EA-6B11-4701D1543481</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5A1BD0-B8E9-CCEE-3567-011A74F508D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

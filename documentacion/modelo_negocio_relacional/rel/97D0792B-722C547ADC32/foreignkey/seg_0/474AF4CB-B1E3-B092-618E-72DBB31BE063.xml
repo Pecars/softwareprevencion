@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="474AF4CB-B1E3-B092-618E-72DBB31BE063" containerWithKeyObject="65C9E31D-D188-C342-B391-2B992A9A7A08" localFKIndex="83C6751E-34CE-E384-8641-2F1F9DD6B94E" name="asesoria_profesionales_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>DB1FF734-5A48-E7F3-F6FD-C18A2F382DF2</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<referredTableLongName>profesionales</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4701CC99-83F5-BC1E-56BA-3CB8CEB6DC5A</referredTableID>
+<keyObject>D0180007-DB4D-4BF7-F21A-33A31ACF0F0A</keyObject>
+<referredKeyID>D0180007-DB4D-4BF7-F21A-33A31ACF0F0A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_profesional</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

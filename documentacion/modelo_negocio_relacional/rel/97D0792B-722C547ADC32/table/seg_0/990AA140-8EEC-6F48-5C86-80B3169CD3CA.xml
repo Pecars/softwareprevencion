@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="990AA140-8EEC-6F48-5C86-80B3169CD3CA" name="instancia_capacitacion">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>FE1869DB-6BFE-C98B-21EA-CA8F5696D6A5</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<abbreviation>ins_cap</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ins" id="34BA7A9C-8CA3-D93E-D2BF-82FA3F179D05">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>CDDD54A7-746B-EB46-90EB-282EDE0EE42E</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_agendada" id="B65D5F07-BA2C-9C6A-AFEB-7762E8388CE2">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>250A2443-57FC-4C85-4038-80FA820A4DB5</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_realizada" id="A29419A6-F6C3-38EF-717C-CD8731899CE4">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>58DFB358-8336-A702-5A86-E6813A4137E2</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_capacitacion" id="18598D21-6F60-4952-793F-CE6EC8770F42">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>399799D6-AA90-9F84-A779-B2C21C917BEA</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tema_capacitacion" id="EC273567-DA30-AB2D-F506-6624D678A97B">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>EB41F454-9018-73F5-34F4-4C798A13AD12</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones_capacitacion" id="89AB8B91-D5E3-6D1C-5F43-51E2379AC431">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>C61E5B68-E99F-6616-5060-EEED9F356FF4</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3000 CHAR</dataTypeSize>
+<ownDataTypeParameters>3000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacitacion_id_cap" id="02EF2EC6-7053-FE61-A616-CA13F20130D4">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>85866918-4102-CEDA-208E-7F04B183A146</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8939A73D-8A64-745D-7227-1770B1B7F0C3" referredColumn="011F9D31-6978-7EA8-A271-984FD35281EB"/>
+</associations>
+</Column>
+<Column name="empresa_rut_empresa" id="512A0AB1-C6CE-BDBC-610D-D7BE8407586A">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F36ED8F2-7586-5AF7-78B0-68FFD232FC6F</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EE9DE47-0FC2-E6CD-4BC2-0E043EFD1789" referredColumn="4E673ACF-E046-9857-297A-9532F299781D"/>
+</associations>
+</Column>
+<Column name="profesionales_rut_prof" id="A274D5A3-BB80-FD49-3C0E-D9BBCDCC5D0E">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>2CD20860-843E-4DAE-D551-6DA62838ED03</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEA2547A-0B64-7EE2-921D-00E16BA40941" referredColumn="8ADCACA6-4C13-CC7E-009B-0D3F8DB2E417"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE764D20-463C-8C2F-DB44-475FA3898CC4" name="instancia_capacitacion_PK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>D7BF2BDC-DB08-DE9E-9115-52DEC6C6818E</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34BA7A9C-8CA3-D93E-D2BF-82FA3F179D05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB5844C8-91E5-1658-94E3-2BFF92E7F8FE" name="instancia_capacitacion_cap_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>FA278E40-FA3A-4161-3258-A81A41F01E1F</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02EF2EC6-7053-FE61-A616-CA13F20130D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="774C6E1E-7262-2CF4-06F8-73E94768E5B6" name="instancia_capacitacion_prof_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>2370D92F-3A48-11A3-859C-859FA19ECA48</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A274D5A3-BB80-FD49-3C0E-D9BBCDCC5D0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0168D74D-67FB-A5F2-D074-C71F667F1336" name="instancia_capacitacion_emp_FK">
+<createdBy>Admin</createdBy>
+<createdTime>2020-06-28 04:37:54 UTC</createdTime>
+<generatorID>F3288133-6CCD-533C-30DB-1B5E686A2D4A</generatorID>
+<ownerDesignName>modelo_negocio_relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="512A0AB1-C6CE-BDBC-610D-D7BE8407586A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,1 @@
+-- Script a ejecutar después del ingreso de los valores a las tablas, es el script de trabajo
