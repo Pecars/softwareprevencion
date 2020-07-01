@@ -32,10 +32,10 @@ public class ListaClienteController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		ClientesDao empresa = new ClientesDao();
+		ClientesDao cliente = new ClientesDao();
 		List<ClientesModel> lClientes = new ArrayList<ClientesModel>();
 		
-		lClientes = empresa.leerCliente();
+		lClientes = cliente.leerCliente();
 		
 		request.setAttribute("listadoempresas", lClientes);
 		request.getRequestDispatcher("LeeCliente.jsp").forward(request, response);

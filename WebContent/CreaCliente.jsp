@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Crear usuario</title>
+<title>Crear Empresa</title>
 </head>
 <body>
 
@@ -18,26 +18,26 @@
 </c:if>
 -->
 <form action="CreaClienteController" method="post">
-	Id Empresa: <input type="text" name="txtnombre" /><br/>
-	Nombre : <input type="text" name="txtapellido" /> <br/>
-	Representante: <input type="text" name="txttelefono" /> <br/>
-	Rut: <input type="number" name="txtcorreo" /> <br/>
-	Dirección : <input type="text" name="txtapellido" /> <br/>
-	Teléfono: <input type="number" name="txttelefono" /> <br/>
-	Correo: <input type="text" name="txtcorreo" /> <br/>
-	Giro: <input type="text" name="txtapellido" /> <br/>
-	Fecha ingreso: <input type="date" name="txttelefono" /> <br/>
-	Número de trabajadores enero: <input type="number" name="txtcorreo" /> <br/>
-	Número de trabajadores abril: <input type="number" name="txtcorreo" /> <br/>
-	Número de trabajadores julio: <input type="number" name="txtcorreo" /> <br/>
-	Número de trabajadores octubre: <input type="number" name="txtcorreo" /> <br/>
-	Administrador: <input type="text" name="txtcorreo" /> <br/>
+	Id Empresa: <input type="number" name="txtidempresa" /><br/>
+	Nombre : <input type="text" name="txtnombreempresa" /> <br/>
+	Representante: <input type="text" name="txtrepresentante" /> <br/>
+	Rut: <input type="number" name="txtrutempresa" /> <br/>
+	Dirección : <input type="text" name="txtdireccionempresa" /> <br/>
+	Teléfono: <input type="number" name="txttelefonoempresa" /> <br/>
+	Correo: <input type="text" name="txtcorreoempresa" /> <br/>
+	Giro: <input type="text" name="txtgiroempresa" /> <br/>
+	Fecha ingreso: <input type="date" name="txtfechaingresoempresa" /> <br/>
+	Número de trabajadores enero: <input type="number" name="txttrabajadoresenero" /> <br/>
+	Número de trabajadores abril: <input type="number" name="txttrabajadoresabril" /> <br/>
+	Número de trabajadores julio: <input type="number" name="txttrabajadoresjulio" /> <br/>
+	Número de trabajadores octubre: <input type="number" name="txttrabajadoresoctubre" /> <br/>
+	Administrador: <input type="text" name="txtadministrador" /> <br/>
 	
-	<input type="submit" value="Agregar usuario" />
+	<input type="submit" value="Agregar cliente" />
 </form>
 
-<!--
-<a href="${pageContext.request.contextPath}/ListarUsuarios">Volver al listado de usuarios</a>
--->
+<a href="${pageContext.request.contextPath}/CreaClienteController">Volver al listado de empresas</a>
+
 </body>
 </html>
+

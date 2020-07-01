@@ -12,11 +12,11 @@
 <body>
 
 <h1>Información empresa</h1>
-<!-- 
-<c:if test="${cumensaje != null}">
-	<c:out value="${cumensaje}" />
+
+<c:if test="${listadoempresas != null}">
+	<c:out value="Hola , la lista es válida" />
 </c:if>
--->
+
 
 <table>
 <tr>
@@ -38,23 +38,23 @@
 
 </tr>
 
-<c:forEach items="${listadoempresas}" var ="empresa">
+<c:forEach items="${listadoempresas}" var ="cliente">
 <tr>
-<td>${empresa.idClientes}</td>
-<td>${empresa.nombreEmpresa}</td>
-<td>${empresa.representanteEmpresa}</td>
-<td>${empresa.rutEmpresa}</td>
-<td>${empresa.direccionEmpresa}</td>
-<td>${empresa.telefonoEmpresa}</td>
-<td>${empresa.correoEmpresa}</td>
-<td>${empresa.giroEmpresa}</td>
-<td>${empresa.fechaIngresoE}</td>
-<td>${empresa.trabajadoresEnero}</td>
-<td>${empresa.trabajadoresAbril}</td>
-<td>${empresa.trabajadoresJulio}</td>
-<td>${empresa.trabajadoresOctubre}</td>
-<td>${empresa.tasaAccidentabilidad}</td>
-<td>${empresa.rutAdministrador}</td>
+<td>${cliente.idClientes}</td>
+<td>${cliente.nombreEmpresa}</td>
+<td>${cliente.representanteEmpresa}</td>
+<td>${cliente.rutEmpresa}</td>
+<td>${cliente.direccionEmpresa}</td>
+<td>${cliente.telefonoEmpresa}</td>
+<td>${cliente.correoEmpresa}</td>
+<td>${cliente.giroEmpresa}</td>
+<td>${cliente.fechaIngresoE}</td>
+<td>${cliente.trabajadoresEnero}</td>
+<td>${cliente.trabajadoresAbril}</td>
+<td>${cliente.trabajadoresJulio}</td>
+<td>${cliente.trabajadoresOctubre}</td>
+<td>${cliente.tasaAccidentabilidad}</td>
+<td>${cliente.rutAdministrador}</td>
 
 </tr>
 </c:forEach>

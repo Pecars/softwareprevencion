@@ -18,7 +18,39 @@ public class ClientesDao implements  ClientesInterfaz {
 	@Override
 	public boolean crearCliente(ClientesModel cliente) {
 		// TODO Auto-generated method stub
-		return false;
+		
+				
+		boolean registrar = false;
+				
+				Statement stm = null;
+				Connection con = null;
+				
+				
+				
+				String sql = "Insert into empresa values ('"+ cliente.getIdClientes() +"','" + cliente.getNombreEmpresa() +
+							"','"+ cliente.getRepresentanteEmpresa()+"','" + cliente.getRutEmpresa() + 
+							"',' " + cliente.getDireccionEmpresa() + " ','" + cliente.getTelefonoEmpresa()+ 
+							"','" + cliente.getCorreoEmpresa() + "','" + cliente.getGiroEmpresa() + 
+							"',' TO_DATE('" + cliente.getFechaIngresoE() + "', 'yyyy/mm/dd') ','" + cliente.getTrabajadoresEnero()+ 
+							"','" + cliente.getTrabajadoresAbril() + "',' " + cliente.getTrabajadoresJulio() + 
+							"','" + cliente.getTrabajadoresOctubre() + "','0','" + cliente.getRutAdministrador()+ "')";
+				
+				
+				try {
+					con = Conexion.getConnection();
+					stm = con.createStatement();
+					stm.execute(sql);
+					registrar = true;
+					stm.close();
+					//con.close();
+				}catch(SQLException e) {
+					System.out.println("Error: Clase ClientesDao, método crearCliente");
+					e.printStackTrace();
+				}
+				
+				return registrar;	
+
+		
 	}
 
 	@Override
@@ -29,7 +61,7 @@ public class ClientesDao implements  ClientesInterfaz {
 	Statement stm = null;
 	ResultSet rs = null;
 	
-	String sql = "select * from empresa ORDER BY ID_EMP";
+	String sql = "SELECT * FROM empresa";
 	
 	List<ClientesModel> listaClientes = new ArrayList<ClientesModel>();
 	
@@ -50,7 +82,7 @@ public class ClientesDao implements  ClientesInterfaz {
 			e.setTelefonoEmpresa(rs.getString(6));
 			e.setCorreoEmpresa(rs.getString(7));
 			e.setGiroEmpresa(rs.getString(8));
-			//e.setFechaIngresoE(rs.getString(9));
+			e.setFechaIngresoE(rs.getDate(9));
 			e.setTrabajadoresEnero(rs.getInt(10));
 			e.setTrabajadoresAbril(rs.getInt(11));
 			e.setTrabajadoresJulio(rs.getInt(12));

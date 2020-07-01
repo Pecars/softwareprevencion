@@ -1,5 +1,7 @@
 package prevreg.model;
 
+import java.sql.Date;
+
 public class ClientesModel {
 	
 	public int idClientes;
@@ -10,7 +12,7 @@ public class ClientesModel {
 	public String telefonoEmpresa;
 	public String correoEmpresa;
 	public String giroEmpresa;
-	public String fechaIngresoE;
+	public Date fechaIngresoE;
 	public int trabajadoresEnero;
 	public int trabajadoresAbril;
 	public int trabajadoresJulio;
@@ -22,11 +24,36 @@ public class ClientesModel {
 	public ClientesModel() {
 	}
 
+//Constructor sin tasa de accidentabilidad
+	
 
+	public ClientesModel(int idClientes, String nombreEmpresa,
+		String representanteEmpresa, int rutEmpresa, String direccionEmpresa,
+		String telefonoEmpresa, String correoEmpresa, String giroEmpresa,
+		Date fechaIngresoE, int trabajadoresEnero, int trabajadoresAbril,
+		int trabajadoresJulio, int trabajadoresOctubre, int rutAdministrador) {
+	this.idClientes = idClientes;
+	this.nombreEmpresa = nombreEmpresa;
+	this.representanteEmpresa = representanteEmpresa;
+	this.rutEmpresa = rutEmpresa;
+	this.direccionEmpresa = direccionEmpresa;
+	this.telefonoEmpresa = telefonoEmpresa;
+	this.correoEmpresa = correoEmpresa;
+	this.giroEmpresa = giroEmpresa;
+	this.fechaIngresoE = fechaIngresoE;
+	this.trabajadoresEnero = trabajadoresEnero;
+	this.trabajadoresAbril = trabajadoresAbril;
+	this.trabajadoresJulio = trabajadoresJulio;
+	this.trabajadoresOctubre = trabajadoresOctubre;
+	this.rutAdministrador = rutAdministrador;
+}	
+	
+	
+//Constructor con todo
 	public ClientesModel(int idClientes, String nombreEmpresa,
 			String representanteEmpresa, int rutEmpresa,
 			String direccionEmpresa, String telefonoEmpresa,
-			String correoEmpresa, String giroEmpresa, String fechaIngresoE,
+			String correoEmpresa, String giroEmpresa, Date fechaIngresoE,
 			int trabajadoresEnero, int trabajadoresAbril,
 			int trabajadoresJulio, int trabajadoresOctubre,
 			float tasaAccidentabilidad, int rutAdministrador) {
@@ -46,6 +73,7 @@ public class ClientesModel {
 		this.tasaAccidentabilidad = tasaAccidentabilidad;
 		this.rutAdministrador = rutAdministrador;
 	}
+
 
 
 	public int getIdClientes() {
@@ -128,12 +156,12 @@ public class ClientesModel {
 	}
 
 
-	public String getFechaIngresoE() {
+	public Date getFechaIngresoE() {
 		return fechaIngresoE;
 	}
 
 
-	public void setFechaIngresoE(String fechaIngresoE) {
+	public void setFechaIngresoE(Date fechaIngresoE) {
 		this.fechaIngresoE = fechaIngresoE;
 	}
 
