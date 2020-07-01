@@ -5,7 +5,7 @@ public class ClientesModel {
 	public int idClientes;
 	public String nombreEmpresa;
 	public String representanteEmpresa;
-	public String rutEmpresa;
+	public int rutEmpresa;
 	public String direccionEmpresa;
 	public String telefonoEmpresa;
 	public String correoEmpresa;
@@ -16,7 +16,7 @@ public class ClientesModel {
 	public int trabajadoresJulio;
 	public int trabajadoresOctubre;
 	public float tasaAccidentabilidad;
-	public int administrador;
+	public int rutAdministrador;
 
 	
 	public ClientesModel() {
@@ -24,12 +24,12 @@ public class ClientesModel {
 
 
 	public ClientesModel(int idClientes, String nombreEmpresa,
-			String representanteEmpresa, String rutEmpresa,
+			String representanteEmpresa, int rutEmpresa,
 			String direccionEmpresa, String telefonoEmpresa,
 			String correoEmpresa, String giroEmpresa, String fechaIngresoE,
 			int trabajadoresEnero, int trabajadoresAbril,
 			int trabajadoresJulio, int trabajadoresOctubre,
-			float tasaAccidentabilidad, int administrador) {
+			float tasaAccidentabilidad, int rutAdministrador) {
 		this.idClientes = idClientes;
 		this.nombreEmpresa = nombreEmpresa;
 		this.representanteEmpresa = representanteEmpresa;
@@ -44,7 +44,7 @@ public class ClientesModel {
 		this.trabajadoresJulio = trabajadoresJulio;
 		this.trabajadoresOctubre = trabajadoresOctubre;
 		this.tasaAccidentabilidad = tasaAccidentabilidad;
-		this.administrador = administrador;
+		this.rutAdministrador = rutAdministrador;
 	}
 
 
@@ -78,12 +78,12 @@ public class ClientesModel {
 	}
 
 
-	public String getRutEmpresa() {
+	public int getRutEmpresa() {
 		return rutEmpresa;
 	}
 
 
-	public void setRutEmpresa(String rutEmpresa) {
+	public void setRutEmpresa(int rutEmpresa) {
 		this.rutEmpresa = rutEmpresa;
 	}
 
@@ -188,13 +188,13 @@ public class ClientesModel {
 	}
 
 
-	public int getAdministrador() {
-		return administrador;
+	public int getRutAdministrador() {
+		return rutAdministrador;
 	}
 
 
-	public void setAdministrador(int administrador) {
-		this.administrador = administrador;
+	public void setRutAdministrador(int rutAdministrador) {
+		this.rutAdministrador = rutAdministrador;
 	}
 
 
@@ -211,7 +211,7 @@ public class ClientesModel {
 				+ trabajadoresAbril + ", trabajadoresJulio="
 				+ trabajadoresJulio + ", trabajadoresOctubre="
 				+ trabajadoresOctubre + ", tasaAccidentabilidad="
-				+ tasaAccidentabilidad + ", administrador=" + administrador
+				+ tasaAccidentabilidad + ", rutAdministrador=" + rutAdministrador
 				+ "]";
 	}
 

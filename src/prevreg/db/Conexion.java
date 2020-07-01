@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+//Conexión singleton crea instancia de conexión
 
 public class Conexion {
 
