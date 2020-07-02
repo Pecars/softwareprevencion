@@ -8,7 +8,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Listado de empresas</title>
-</head>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="WEB-INF/app/app.js"></script>
+
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+   </head>
 <body>
 
 <h1>Información empresa</h1>
@@ -21,7 +28,7 @@
 	<c:out value="${cumensaje}" />
 </c:if>
 
-<table>
+<table id = "table">
 <tr>
 <th>ID</th>
 <th>Nombre</th>
@@ -33,9 +40,9 @@
 <th>Giro</th>
 <th>Fecha de Ingreso</th>
 <th>Trabajadores Enero</th>
-<th>Trabajodores Abril</th>
+<th>Trabajadores Abril</th>
 <th>Trabajadores Julio</th>
-<th>Trabajodores Octubre</th>
+<th>Trabajadores Octubre</th>
 <th>Tasa Accidentabilidad</th>
 <th>Administrador a cargo</th>
 <th>Acciones</th>

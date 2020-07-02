@@ -51,16 +51,21 @@ public class CreaClienteController extends HttpServlet {
 		String telefonoEmpresa = request.getParameter("txttelefonoempresa");
 		String correoEmpresa = request.getParameter("txtcorreoempresa");
 		String giroEmpresa = request.getParameter("txtgiroempresa");
-		String fechaIngresoEstr = request.getParameter("txtfechaingresoempresa");
-			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		//String fechaIngresoEstr = request.getParameter("txtfechaingresoempresa");
+		
+		String newstring = new SimpleDateFormat("yyyy-MM-dd").format(request.getParameter("txtfechaingresoempresa"));
+		System.out.println(newstring);
+
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			Date fechaIngresoE = null;
 			try {
-				fechaIngresoE = (Date)sdf.parse(fechaIngresoEstr);
+				fechaIngresoE = (Date)sdf.parse(newstring);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
+		
 			/*
 			String startDateStr = request.getParameter("startDate");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
