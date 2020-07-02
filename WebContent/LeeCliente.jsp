@@ -17,6 +17,9 @@
 	<c:out value="Hola , la lista es válida" />
 </c:if>
 
+<c:if test="${cumensaje != null}">
+	<c:out value="${cumensaje}" />
+</c:if>
 
 <table>
 <tr>
@@ -35,6 +38,7 @@
 <th>Trabajodores Octubre</th>
 <th>Tasa Accidentabilidad</th>
 <th>Administrador a cargo</th>
+<th>Acciones</th>
 
 </tr>
 
@@ -55,6 +59,13 @@
 <td>${cliente.trabajadoresOctubre}</td>
 <td>${cliente.tasaAccidentabilidad}</td>
 <td>${cliente.rutAdministrador}</td>
+<td> 
+<a href="${pageContext.request.contextPath}/EliminaClienteController?idClientes=${cliente.idClientes}">Eliminar</a>
+&nbsp;
+<a href="${pageContext.request.contextPath}/EditaClienteController?idClientes=${cliente.idClientes}">Editar</a>
+
+
+</td>
 
 </tr>
 </c:forEach>
