@@ -12,11 +12,11 @@
 <body>
 
 <h1>Información empresa</h1>
-<!-- 
+
 <c:if test="${cumensaje != null}">
 	<c:out value="${cumensaje}" />
 </c:if>
--->
+
 <form action="CreaClienteController" method="post">
 	Id Empresa: <input type="number" name="txtidempresa" /><br/>
 	Nombre : <input type="text" name="txtnombreempresa" /> <br/>
@@ -36,7 +36,7 @@
 	<input type="submit" value="Agregar cliente" />
 </form>
 
-<a href="${pageContext.request.contextPath}/CreaClienteController">Volver al listado de empresas</a>
+<a href="${pageContext.request.contextPath}/ListaClienteController">Volver al listado de empresas</a>
 
 </body>
 </html>
