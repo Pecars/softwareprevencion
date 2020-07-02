@@ -59,4 +59,14 @@
     <servlet-name>ListaClienteController</servlet-name>
     <url-pattern>/ListaClienteController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CapacitacionController</display-name>
+    <servlet-name>CapacitacionController</servlet-name>
+    <servlet-class>prevreg.controller.CapacitacionController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CapacitacionController</servlet-name>
+    <url-pattern>/CapacitacionController</url-pattern>
+  </servlet-mapping>
 </web-app>
