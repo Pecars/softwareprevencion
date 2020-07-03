@@ -1,5 +1,9 @@
 package prevreg.controller;
 
+/**
+ * @author Paula Carrasco
+ */
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

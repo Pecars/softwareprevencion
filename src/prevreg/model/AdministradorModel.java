@@ -1,5 +1,10 @@
 package prevreg.model;
 
+/**
+ * @author Paula Carrasco
+ * 
+ */
+
 public class AdministradorModel {
 	
 	public int idAdministrador;

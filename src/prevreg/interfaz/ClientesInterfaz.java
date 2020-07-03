@@ -1,5 +1,9 @@
 package prevreg.interfaz;
 
+/**
+ * @author Paula Carrasco
+ */
+
 import java.util.List;
 
 import prevreg.model.ClientesModel;

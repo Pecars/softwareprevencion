@@ -1,5 +1,9 @@
 package prevreg.model;
 
+/**
+ * @author Paula Carrasco
+ */
+
 import java.sql.Date;
 
 public class ClientesModel {

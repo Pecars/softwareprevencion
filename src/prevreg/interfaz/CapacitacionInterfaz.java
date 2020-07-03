@@ -1,5 +1,9 @@
 package prevreg.interfaz;
 
+/**
+ * @author Nice
+ */
+
 import java.util.List;
 
 import prevreg.model.CapacitacionAgendadaModel;
